@@ -1,0 +1,145 @@
+ *,
+ *::before,
+ *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+    background-color: rgb(39, 39, 39);
+ }
+
+ header {
+    width: 100%;
+    height: 50px;
+    margin: 50px auto;
+
+
+    >h1 {
+       font-size: 80px;
+       font-family: serif;
+       color: rgb(197, 197, 197);
+       padding: 10px 400px;
+       user-select: none;
+
+    }
+ }
+
+ .zara {
+    width: 450px;
+    height: 750px;
+    margin: 100px auto;
+    background-color: rgb(197, 197, 197);
+    /* border: 4px solid red; */
+    border-radius: 100% 63% 98% 61% / 91% 100% 49% 70%;
+    display: flex;
+
+    &:hover {
+       >img {
+          scale: 1.2;
+
+       }
+    }
+
+    >img {
+
+       justify-content: center;
+       margin: 0 -15px;
+       transition: 1s;
+
+    }
+
+ }
+
+ .price {
+    width: 1000px;
+    height: 150px;
+    margin: 100px auto;
+    background-color: rgb(197, 197, 197);
+    /* border: 3px solid red; */
+    display: flex;
+
+
+    >div {
+       border: 3px solid rgb(39, 39, 39);
+       flex-basis: 200px;
+       height: 150px;
+       justify-content: center;
+       align-items: center;
+       display: flex;
+       gap: 20px;
+
+
+       transition: 1s;
+
+       >.txt {
+          display: none;
+          font-family: serif;
+          color: rgb(26, 26, 26);
+          font-size: 16px;
+          user-select: none;
+       }
+
+
+       &:hover {
+
+          flex-basis: 500px;
+          justify-content: flex-start;
+
+          >.txt {
+             display: block;
+          }
+
+
+
+
+
+       }
+
+
+
+
+    }
+
+
+ }
+
+ footer {
+    background-color: rgb(197, 197, 197);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    position: relative;
+
+    >p {
+       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+       font-size: 20px;
+       color: rgb(26, 26, 26);
+       justify-content: flex-end;
+       align-items: flex-start;
+       margin: 50px 50px;
+
+    }
+
+    ul {
+       font-size: 16px;
+       color: rgb(26, 26, 26);
+       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+       margin: 50px 50px;
+       position: absolute;
+       left: 4;
+       bottom: 0;
+
+
+       >li {
+          list-style-type: none;
+
+          >a {
+             text-decoration: none;
+             padding: 5px 5px;
+
+          }
+       }
+
+    }
